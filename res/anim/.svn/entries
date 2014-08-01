@@ -1,0 +1,147 @@
+10
+
+dir
+0
+https://192.168.95.20:8080/svn/mTrace/Client/Android/V1.0.0/SourceCode/mTrace/res/anim
+https://192.168.95.20:8080/svn/mTrace
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bf61317f-c135-9442-be57-f6f53ea922f2
+
+push_leftin.xml
+file
+
+
+
+add
+
+push_left_out.xml
+file
+
+
+
+add
+
+nochange.xml
+file
+
+
+
+add
+
+enter_alpha.xml
+file
+
+
+
+add
+
+up_enter_alpha.xml
+file
+
+
+
+add
+
+slide_up_in.xml
+file
+
+
+
+add
+
+down_enter2_alpha.xml
+file
+
+
+
+add
+
+out2_alpha.xml
+file
+
+
+
+add
+
+up_out2_alpha.xml
+file
+
+
+
+add
+
+push_right_in.xml
+file
+
+
+
+add
+
+down_out_alpha.xml
+file
+
+
+
+add
+
+push_right_out.xml
+file
+
+
+
+add
+
+push_rightin.xml
+file
+
+
+
+add
+
+enter2_alpha.xml
+file
+
+
+
+add
+
+out_alpha.xml
+file
+
+
+
+add
+
+slide_down_out.xml
+file
+
+
+
+add
+
+push_left_in.xml
+file
+
+
+
+add
+

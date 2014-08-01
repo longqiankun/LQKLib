@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- drop down list header font color -->
+    <color name="drop_down_list_header_font_color">#000000</color>
+    <!-- drop down list header second font color -->
+    <color name="drop_down_list_header_second_font_color">#000000</color>
+    <!-- drop down list footer font color -->
+    <color name="drop_down_list_footer_font_color">#000000</color>
+    
+         <color name="tabbar_1">#a8d3ff</color>
+	<color name="tabbar_2">#ffffff</color>
+	<!-- <color name="canlendar_border">#6b952f</color> -->
+	<color name="canlendar_border">#a4957a</color>
+	<color name="canlendar_header">#c38c2f</color>
+	<color name="canlendar_week_6">#0072ff</color>
+	<color name="canlendar_week_7">#f02f2f</color>
+
+</resources>

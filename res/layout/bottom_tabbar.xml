@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<LinearLayout android:id="@+id/fl_body" 
+		android:orientation="vertical"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent" 
+		android:layout_above="@+id/tc_tabBar" />
+    	<com.lqk.lib.ui.tabbar.TabContainer
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:minHeight="60dp"
+        		android:orientation="horizontal"
+        		android:layout_alignParentBottom="true"
+        		android:id="@id/tc_tabBar">
+    	</com.lqk.lib.ui.tabbar.TabContainer>
+</RelativeLayout>
