@@ -40,10 +40,13 @@ public class TabContainer extends LinearLayout {
 	public void updateView(TabConfig mConfig) {
 		Class clazz = mConfig.className;
 		for (int i = 0; i < mTabButtons.size(); i++) {
-			Class clazz2 = mTabButtons.get(i).mConfig.className;
+			TabConfig mTabConfig=mTabButtons.get(i).mConfig;
+			Class clazz2 = mTabConfig.className;
 			if (clazz2.getName().equals(clazz.getName())) {
 				mTabButtons.get(i).updateView(mConfig);
-				break;
+			}else{
+				mTabConfig.isSelected=false;
+				mTabButtons.get(i).updateView(mTabConfig);
 			}
 		}
 	}

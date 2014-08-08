@@ -13,6 +13,9 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.lqk.framework.inject.InjectLayer;
+import com.lqk.framework.inject.InjectPLayer;
+import com.lqk.framework.util.Handler_Inject;
 import com.lqk.lib.R;
 import com.lqk.lib.ui.header.HeaderConfig.BtnClick;
 import com.lqk.lib.ui.tabbar.TabBarActivity;
@@ -49,15 +52,15 @@ public abstract class HeaderActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.header);
+		/*setContentView(R.layout.header);
 		initView();
 		res=getResources();
 		setViewStatus();
 		if(getParent() instanceof TabBarActivity){
 		mParent=(TabBarActivity) getParent();
-		}
+		}*/
 	}
-
+	
 	/**
 	 * 初始化控件
 	 */
@@ -70,9 +73,19 @@ public abstract class HeaderActivity extends Activity {
 		ib_top_right = (ImageButton) findViewById(R.id.ib_top_right);
 		pageContent=(FrameLayout) findViewById(R.id.page_content);
 		ll_left=(LinearLayout) findViewById(R.id.ll_left);
-		ll_left.setOnClickListener(topClickListener);
+		
 	}
-
+	private void initView(View view) {
+		rl_top_bg = (RelativeLayout)view. findViewById(R.id.rl_top_bg);
+		btn_top_left = (Button)view.  findViewById(R.id.btn_top_left);
+		ib_top_left = (ImageButton)view.  findViewById(R.id.ib_top_left);
+		tv_top_middle = (TextView)view.  findViewById(R.id.tv_top_middle);
+		btn_top_right = (Button)view.  findViewById(R.id.btn_top_right);
+		ib_top_right = (ImageButton)view.  findViewById(R.id.ib_top_right);
+		pageContent=(FrameLayout)view. findViewById(R.id.page_content);
+		ll_left=(LinearLayout) view. findViewById(R.id.ll_left);
+		
+	}
 	/**
 	 * 设置顶部样式
 	 */
@@ -114,7 +127,9 @@ public abstract class HeaderActivity extends Activity {
 			if(config.top_leftbg>0){
 				ll_left.setBackgroundResource(config.top_leftbg);
 			}
-			
+			if(config.isImpLeft){
+				ll_left.setOnClickListener(topClickListener);
+			}
 			
 			//中间文本
 			if (!TextUtils.isEmpty(config.middleTile)) {
@@ -133,8 +148,9 @@ public abstract class HeaderActivity extends Activity {
 				if (config.ib_top_leftsrc>0){
 					 ib_top_left.setImageResource(config.ib_top_leftsrc);
 				}
-				
+				if(config.isImpIbLeft){
 				ib_top_left.setOnClickListener(topClickListener);
+				}
 			}
 			
 			//左边图标按钮
@@ -147,8 +163,9 @@ public abstract class HeaderActivity extends Activity {
 				if (config.btn_top_leftTextId>0){
 					btn_top_left.setText(config.btn_top_leftTextId);
 				}
-				
+				if(config.isImpbtnLeft){
 				btn_top_left.setOnClickListener(topClickListener);
+				}
 			}
 			
 			
@@ -163,8 +180,9 @@ public abstract class HeaderActivity extends Activity {
 				if (config.ib_top_rightsrc>0){
 					 ib_top_left.setImageResource(config.ib_top_rightsrc);
 				}
-				
+				if(config.isImpIbRight){
 				ib_top_right.setOnClickListener(topClickListener);
+				}
 			}
 			
 			//右边图标按钮
@@ -177,8 +195,9 @@ public abstract class HeaderActivity extends Activity {
 				if (config.btn_top_rightTextId>0){
 					btn_top_right.setText(config.btn_top_rightTextId);
 				}
-				
+				if(config.isImpbtnRight){
 				btn_top_right.setOnClickListener(topClickListener);
+				}
 			}
 	
 		}
@@ -227,7 +246,6 @@ public abstract class HeaderActivity extends Activity {
 	};
 	/**
 	 * 添加子view到当前容器中
-	 * 
 	 * @param viewResId
 	 * @return
 	 */
@@ -237,6 +255,37 @@ public abstract class HeaderActivity extends Activity {
 		initData();// 初始化数据
 		setListener();// 设置监听
 		return view;
+	}
+	
+	/**
+	 * 添加子view到当前容器中
+	 * 
+	 * @param viewResId
+	 * @return
+	 */
+	protected View addContentView(View  view) {
+		initView(view);
+		setViewStatus();
+		res=getResources();
+		if(getParent() instanceof TabBarActivity){
+		mParent=(TabBarActivity) getParent();
+		}
+//	    pageContent.addView(view, 0);
+		initData();// 初始化数据
+		setListener();// 设置监听
+		return view;
+	}
+	protected void initHeader(View view){
+		if(view!=null){
+		initView(view);
+		setViewStatus();
+		}
+		res=getResources();
+		if(getParent() instanceof TabBarActivity){
+		mParent=(TabBarActivity) getParent();
+		}
+		initData();// 初始化数据
+		setListener();// 设置监听
 	}
 	/**
 	 * 获取顶部封装信息
@@ -258,4 +307,5 @@ public abstract class HeaderActivity extends Activity {
 	 * 设置初始化数据
 	 */
 	public abstract void initData();
+	
 }

@@ -5,6 +5,7 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 
 import android.app.ActivityGroup;
@@ -38,9 +39,13 @@ public class TabBarActivity extends ActivityGroup implements OnTabItemSelectList
 	public static TabBarActivity intance;
 	// 菜单中的类集合
 	private LinkedList<Class> mStartedActivityList;
+	private HashMap<Class, Integer> tabSigns;
+	
+	private LinkedList<TabConfig> mTabConfigs;
 	
 	LinearLayout fl_body;//主容器
 	private TabContainer tc_tabBar;// 子页面的容器
+	Class curClass;//当前tab的类
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -50,8 +55,11 @@ public class TabBarActivity extends ActivityGroup implements OnTabItemSelectList
 		tc_tabBar.setOnTabItemSelectListener(this);
 		mActivityManager=getLocalActivityManager();
 		mStartedActivityList = new LinkedList<Class>();
+		tabSigns=new HashMap<Class, Integer>();
+		mTabConfigs=new LinkedList<TabConfig>();
 	}
 	public void addTabButton(TabConfig mConfig){
+		mTabConfigs.add(mConfig);
 		tc_tabBar.addTabButton(mConfig);
 	}
 	public void commit(){
@@ -70,19 +78,49 @@ public class TabBarActivity extends ActivityGroup implements OnTabItemSelectList
 	 * @param intent
 	 */
 	public void updateBodyView(Class activityCalss, Intent intent) {
+		curClass=activityCalss;
+		Window window = mActivityManager.startActivity(activityCalss.getName(),intent);
+		fl_body.removeAllViews();
+		View view=window.getDecorView();
 		if (activityCalss == null) {
 			mStartedActivityList.clear();
 		} else {
 			mStartedActivityList.remove(activityCalss);
 			mStartedActivityList.add(activityCalss);
+			
+			if(intent.hasExtra(TabConfig.TABSIGNKEY)){
+				tabSigns.put(activityCalss, intent.getIntExtra(TabConfig.TABSIGNKEY, 0));
+			}
 		}
-		Window window = mActivityManager.startActivity(activityCalss.getName(),
-				intent);
-		fl_body.removeAllViews();
-		View view=window.getDecorView();
 		fl_body.addView(view);
+		updateBottomStatus(intent);
 	}
 
+	
+		/**
+	* @Title: updateBottomStatus
+	* @Description:更新底部状态
+	* @param 
+	* @return void
+	* @throws
+	*/
+		
+	private void updateBottomStatus(Intent intent) {
+		if(intent!=null){
+			if(intent.hasExtra(TabConfig.TABSIGNKEY)){
+				int tabSign=intent.getIntExtra(TabConfig.TABSIGNKEY, 0);
+		for (int i = 0; i < mTabConfigs.size(); i++) {
+			TabConfig mConfig=mTabConfigs.get(i);
+			if(mConfig.tabSign==tabSign){
+				mConfig.isSelected=true;
+				updateView(mConfig);
+				break;
+			}
+		}
+			}
+		}
+		
+	}
 	/**
 	 * 根据指定的标识消除activity
 	 * @param id
@@ -143,7 +181,7 @@ public class TabBarActivity extends ActivityGroup implements OnTabItemSelectList
 		  else if(event.getAction() == KeyEvent.ACTION_UP &&event.getKeyCode() ==
 	  KeyEvent.KEYCODE_HOME){
 		  
-	  } return true; }
+	  } return false; }
 	  /**
 		 * 返回处理
 		 */
@@ -160,27 +198,52 @@ public class TabBarActivity extends ActivityGroup implements OnTabItemSelectList
 				} else {
 					finish();// 否则退出程序
 				}
-			} /*else if () {
+			} else if (mTabConfigs.size()>0 && isTabClass() ) {
 				long secondTime = System.currentTimeMillis();
 				if (secondTime - firstTime > 2000) {// 如果两次按键时间间隔大于800毫秒，则不退出
 					Toast.makeText(TabBarActivity.this, "再按一次退出程序...",
 							Toast.LENGTH_SHORT).show();
 					firstTime = secondTime;// 更新firstTime
-					// return true;
 				} else {
 					finish();// 否则退出程序
 				}
-			}*/ else {
+			} else {
 				removeStartedActivity(mStartedActivityList.getLast());
 				size--;
 				if (size == 0) {
-					// updateBodyView(TabOrder.class,new
-					// Intent(this,TabOrder.class));
 				} else {
-					updateBodyView(mStartedActivityList.getLast(), new Intent(
-							this, mStartedActivityList.getLast()));
+					/*updateBodyView(mStartedActivityList.getLast(), new Intent(
+							this, mStartedActivityList.getLast()));*/
+					if(!tabSigns.containsKey(mStartedActivityList.getLast())){
+						updateBodyView(mStartedActivityList.getLast(), new Intent(
+								this, mStartedActivityList.getLast()));
+					}else{
+					Intent intnet= new Intent(this, mStartedActivityList.getLast());
+					intnet.putExtra(TabConfig.TABSIGNKEY, tabSigns.get(mStartedActivityList.getLast()));
+					updateBodyView(mStartedActivityList.getLast(),intnet);
+					}
+					
 				}
 			}
+		}
+		/**
+		 * 
+		* @Title: isTabClass
+		* @Description: 检查当前类是否是标签对应类
+		* @param @return
+		* @return boolean
+		* @throws
+		 */
+		private boolean isTabClass(){
+			if(curClass!=null){
+			for (int i = 0; i < mTabConfigs.size(); i++) {
+			TabConfig mConfig=	mTabConfigs.get(i);
+			if(mConfig.className.equals(curClass)){
+				return true;
+			}
+			}
+			}
+			return false;
 		}
 	public void removeStartedActivity(Class activityClass) {
 		mStartedActivityList.remove(activityClass);

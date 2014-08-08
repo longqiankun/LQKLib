@@ -88,7 +88,70 @@ public class AnimUtils {
 		v.setVisibility(View.GONE);
 	
 	}
+	/**
+	 * 
+	* @Title: showDown
+	* @Description: 从底部显示动画
+	* @param @param context
+	* @param @param v
+	* @return void
+	* @throws
+	 */
+	public static  void showDown(Context context,final View v) {
+		Animation anim_dismiss;
+		anim_dismiss =AnimationUtils.loadAnimation(context,R.anim.up_enter_alpha);
+		anim_dismiss.setFillAfter(true);
+		v.startAnimation(anim_dismiss);
 	
+	}
+	/**
+	 * 
+	* @Title: dismissDown
+	* @Description: 从底部消失的动画
+	* @param @param context
+	* @param @param v
+	* @return void
+	* @throws
+	 */
+	public static  void dismissDown(Context context,final View v) {
+		Animation anim_dismiss;
+		anim_dismiss =AnimationUtils.loadAnimation(context,R.anim.up_out2_alpha);
+		anim_dismiss.setFillAfter(true);
+		v.startAnimation(anim_dismiss);
+	
+	}
+	/**
+	 * 
+	* @Title: showUp
+	* @Description: 从顶部显示动画
+	* @param @param context
+	* @param @param v
+	* @return void
+	* @throws
+	 */
+	public static  void showUp(Context context,final View v) {
+		Animation anim_dismiss;
+		anim_dismiss =AnimationUtils.loadAnimation(context,R.anim.down_enter2_alpha);
+		anim_dismiss.setFillAfter(true);
+		v.startAnimation(anim_dismiss);
+	
+	}
+	/**
+	 * 
+	* @Title: dismissUp
+	* @Description: 从顶部消失动画
+	* @param @param context
+	* @param @param v
+	* @return void
+	* @throws
+	 */
+	public static  void dismissUp(Context context,final View v) {
+		Animation anim_dismiss;
+		anim_dismiss =AnimationUtils.loadAnimation(context,R.anim.down_out_alpha);
+		anim_dismiss.setFillAfter(true);
+		v.startAnimation(anim_dismiss);
+	
+	}
 	/**
 	 * 代码实现旋转的菊花效果
 	 * 

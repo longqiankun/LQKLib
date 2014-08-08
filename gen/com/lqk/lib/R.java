@@ -34,6 +34,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
         public static int adapterViewBackground=0x7f010003;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int circleBackground=0x7f010016;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>East</code></td><td>0</td><td></td></tr>
+<tr><td><code>South</code></td><td>90</td><td></td></tr>
+<tr><td><code>West</code></td><td>180</td><td></td></tr>
+<tr><td><code>North</code></td><td>270</td><td></td></tr>
+</table>
+         */
+        public static int firstChildPosition=0x7f010017;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
@@ -49,6 +70,14 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static int headerTextColor=0x7f010005;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int image=0x7f010015;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -73,6 +102,109 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static int isOnBottomStyle=0x7f010001;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int isRotating=0x7f010019;
+        /**  Drawable used as indicator for the active view. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static int mdActiveIndicator=0x7f01000b;
+        /**  Whether the indicator should be animated between active views. 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int mdAllowIndicatorAnimation=0x7f010011;
+        /**  Drawable to use for the background of the content. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static int mdContentBackground=0x7f010008;
+        /**  Drawable used for the drop shadow. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static int mdDropShadow=0x7f01000f;
+        /**  The color of the drop shadow. Default is #FF000000. 
+         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int mdDropShadowColor=0x7f01000e;
+        /**  Defines whether the content will have a dropshadow onto the menu. Default is true. 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int mdDropShadowEnabled=0x7f01000c;
+        /**  The size of the drop shadow. Default is 6dp 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int mdDropShadowSize=0x7f01000d;
+        /**  The maximum animation duration 
+         <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int mdMaxAnimationDuration=0x7f010012;
+        /**  Drawable to use for the background of the menu. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static int mdMenuBackground=0x7f010009;
+        /**  The size of the menu. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int mdMenuSize=0x7f01000a;
+        /**  The touch bezel size. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int mdTouchBezelSize=0x7f010010;
+        /**  Reference to a style for the menu drawer. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static int menuDrawerStyle=0x7f010007;
         /** <p>Must be one or more (separated by '|') of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -85,8 +217,48 @@ containing a value of this type.
 </table>
          */
         public static int mode=0x7f010006;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int name=0x7f01001a;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int rotateToCenter=0x7f010018;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int subtitle=0x7f010014;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int title=0x7f010013;
     }
     public static final class color {
+        public static int base_end_color_default=0x7f06000d;
+        public static int base_end_color_pressed=0x7f06000f;
+        /**  ITEM BACKGROUND COLOR - STATE - DEFAULT 
+         */
+        public static int base_start_color_default=0x7f06000c;
+        /**  ITEM BACKGROUND COLOR - STATE - PRESSED 
+         */
+        public static int base_start_color_pressed=0x7f06000e;
         /**  <color name="canlendar_border">#6b952f</color> 
          */
         public static int canlendar_border=0x7f060005;
@@ -102,8 +274,18 @@ containing a value of this type.
         /**  drop down list header second font color 
          */
         public static int drop_down_list_header_second_font_color=0x7f060001;
+        public static int md__defaultBackground=0x7f06000a;
+        public static int md__transparent=0x7f060009;
+        /**  LIST BORDER COLOR 
+         */
+        public static int rounded_container_border=0x7f06000b;
         public static int tabbar_1=0x7f060003;
         public static int tabbar_2=0x7f060004;
+        /**  ITEM TEXT COLORS - STATES - PRESSED AND DEFAULT 
+         */
+        public static int text_color_default=0x7f060010;
+        public static int text_color_pressed=0x7f060011;
+        public static int text_color_selector=0x7f060012;
     }
     public static final class dimen {
         /** 
@@ -121,48 +303,106 @@ containing a value of this type.
         public static int drop_down_list_header_release_min_distance=0x7f070002;
     }
     public static final class drawable {
-        public static int bottom_bar_highlight=0x7f020000;
-        public static int down=0x7f020001;
-        public static int drop_down_list_arrow=0x7f020002;
-        public static int ic_launcher=0x7f020003;
-        public static int scrollbar_horizontal_thumb=0x7f020004;
-        public static int scrollbar_horizontal_track=0x7f020005;
-        public static int up=0x7f020006;
+        public static int background_view_rounded_bottom=0x7f020000;
+        public static int background_view_rounded_container=0x7f020001;
+        public static int background_view_rounded_middle=0x7f020002;
+        public static int background_view_rounded_single=0x7f020003;
+        public static int background_view_rounded_top=0x7f020004;
+        public static int bottom_bar_highlight=0x7f020005;
+        public static int button_text_color=0x7f020006;
+        public static int chevron=0x7f020007;
+        public static int chevron_default=0x7f020008;
+        public static int chevron_default_down=0x7f020009;
+        public static int chevron_white=0x7f02000a;
+        public static int chevron_white_down=0x7f02000b;
+        public static int down=0x7f02000c;
+        public static int drop_down_list_arrow=0x7f02000d;
+        public static int ic_launcher=0x7f02000e;
+        public static int ic_menu_moreoverflow_normal_holo_light=0x7f02000f;
+        public static int md__category_background=0x7f020010;
+        public static int md__list_focused_holo=0x7f020011;
+        public static int md__list_longpressed_holo=0x7f020012;
+        public static int md__list_pressed_holo_dark=0x7f020013;
+        public static int md__list_selector_background_transition_holo_dark=0x7f020014;
+        public static int md__list_selector_disabled_holo_dark=0x7f020015;
+        public static int md__list_selector_holo_dark=0x7f020016;
+        public static int menu_arrow=0x7f020017;
+        public static int menu_arrow_bottom=0x7f020018;
+        public static int menu_arrow_right=0x7f020019;
+        public static int menu_arrow_top=0x7f02001a;
+        public static int scrollbar_horizontal_thumb=0x7f02001b;
+        public static int scrollbar_horizontal_track=0x7f02001c;
+        public static int up=0x7f02001d;
     }
     public static final class id {
-        public static int action_settings=0x7f050019;
+        public static int East=0x7f050003;
+        public static int North=0x7f050006;
+        public static int South=0x7f050004;
+        public static int West=0x7f050005;
+        public static int action_settings=0x7f05002b;
         public static int both=0x7f050002;
-        public static int btn_top_left=0x7f050011;
-        public static int btn_top_right=0x7f050013;
-        public static int drop_down_list_footer_button=0x7f050008;
-        public static int drop_down_list_footer_progress_bar=0x7f050007;
-        public static int drop_down_list_header_default_text=0x7f05000c;
-        public static int drop_down_list_header_default_text_layout=0x7f05000a;
-        public static int drop_down_list_header_image=0x7f05000b;
-        public static int drop_down_list_header_progress_bar=0x7f050009;
-        public static int drop_down_list_header_second_text=0x7f05000d;
-        public static int fl_body=0x7f050005;
-        public static int gridview=0x7f050003;
-        public static int ib_top_left=0x7f050010;
-        public static int ib_top_right=0x7f050014;
-        public static int ll_left=0x7f05000f;
-        public static int page_content=0x7f050015;
+        public static int btn_top_left=0x7f05001b;
+        public static int btn_top_right=0x7f05001d;
+        public static int buttonsContainer=0x7f050021;
+        public static int chevron=0x7f050027;
+        public static int drop_down_list_footer_button=0x7f050012;
+        public static int drop_down_list_footer_progress_bar=0x7f050011;
+        public static int drop_down_list_header_default_text=0x7f050016;
+        public static int drop_down_list_header_default_text_layout=0x7f050014;
+        public static int drop_down_list_header_image=0x7f050015;
+        public static int drop_down_list_header_progress_bar=0x7f050013;
+        public static int drop_down_list_header_second_text=0x7f050017;
+        public static int fl_body=0x7f05000f;
+        public static int gridview=0x7f050007;
+        public static int ib_top_left=0x7f05001a;
+        public static int ib_top_right=0x7f05001e;
+        public static int image=0x7f050023;
+        public static int itemContainer=0x7f050022;
+        public static int itemCount=0x7f050026;
+        public static int ll_left=0x7f050019;
+        /**  Used with View#setTag(int) to specify a position for the active view. 
+         */
+        public static int mdActiveViewPosition=0x7f05000e;
+        /**  ID used when defining the content layout in XML. 
+         */
+        public static int mdContent=0x7f050009;
+        /**  ID used when defining the menu layout in XML. 
+         */
+        public static int mdMenu=0x7f05000a;
+        /**  The ID of the content container. 
+         */
+        public static int md__content=0x7f05000b;
+        /**  The ID of the drawer. 
+         */
+        public static int md__drawer=0x7f05000d;
+        /**  The ID of the menu container. 
+         */
+        public static int md__menu=0x7f05000c;
+        public static int page_content=0x7f05001f;
         public static int pullDownFromTop=0x7f050000;
         public static int pullUpFromBottom=0x7f050001;
-        public static int pull_to_refresh_image=0x7f050018;
-        public static int pull_to_refresh_progress=0x7f050017;
-        public static int pull_to_refresh_text=0x7f050016;
-        public static int rl_top_bg=0x7f05000e;
-        public static int tc_tabBar=0x7f050006;
-        public static int tv_top_middle=0x7f050012;
-        public static int webview=0x7f050004;
+        public static int pull_to_refresh_image=0x7f05002a;
+        public static int pull_to_refresh_progress=0x7f050029;
+        public static int pull_to_refresh_text=0x7f050028;
+        public static int rl_top_bg=0x7f050018;
+        public static int subtitle=0x7f050025;
+        public static int tc_tabBar=0x7f050010;
+        public static int title=0x7f050024;
+        public static int tv_top_middle=0x7f05001c;
+        public static int viewsContainer=0x7f050020;
+        public static int webview=0x7f050008;
     }
     public static final class layout {
         public static int bottom_tabbar=0x7f030000;
         public static int drop_down_list_footer=0x7f030001;
         public static int drop_down_list_header=0x7f030002;
         public static int header=0x7f030003;
-        public static int pull_to_refresh_header=0x7f030004;
+        public static int list_container=0x7f030004;
+        public static int list_item_bottom=0x7f030005;
+        public static int list_item_middle=0x7f030006;
+        public static int list_item_single=0x7f030007;
+        public static int list_item_top=0x7f030008;
+        public static int pull_to_refresh_header=0x7f030009;
     }
     public static final class menu {
         public static int main=0x7f0a0000;
@@ -195,14 +435,349 @@ containing a value of this type.
     
  API 14 theme customizations can go here. 
          */
-        public static int AppBaseTheme=0x7f090005;
+        public static int AppBaseTheme=0x7f090019;
+        public static int MenuDrawer=0x7f090005;
+        public static int MenuDrawer_Widget=0x7f090006;
+        public static int MenuDrawer_Widget_Category=0x7f090009;
+        public static int MenuDrawer_Widget_Title=0x7f09000a;
+        public static int MenuDrawerStyle=0x7f09000b;
+        public static int MenuDrawerStyle_Bottom=0x7f09000e;
+        public static int MenuDrawerStyle_Right=0x7f09000c;
+        public static int MenuDrawerStyle_Top=0x7f09000d;
+        /**  LIST 
+         */
+        public static int UITableView=0x7f09000f;
+        public static int Widget=0x7f090007;
+        /**  Base theme for the menu drawer. 
+         */
+        public static int Widget_MenuDrawer=0x7f090008;
+        public static int content_page_large_count_text=0x7f090018;
+        /**  TEXT 
+         */
+        public static int content_page_large_text=0x7f090016;
+        public static int content_page_small_text=0x7f090017;
         public static int drop_down_list_footer_font_style=0x7f090004;
         public static int drop_down_list_footer_progress_bar_style=0x7f090001;
         public static int drop_down_list_header_font_style=0x7f090002;
         public static int drop_down_list_header_progress_bar_style=0x7f090000;
         public static int drop_down_list_header_second_font_style=0x7f090003;
+        public static int list_container=0x7f090010;
+        public static int list_item_bottom=0x7f090013;
+        public static int list_item_chevron=0x7f090015;
+        public static int list_item_middle=0x7f090012;
+        public static int list_item_single=0x7f090014;
+        public static int list_item_top=0x7f090011;
     }
     public static final class styleable {
+        /** Attributes that can be used with a Circle.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #Circle_circleBackground com.lqk.lib:circleBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Circle_firstChildPosition com.lqk.lib:firstChildPosition}</code></td><td></td></tr>
+           <tr><td><code>{@link #Circle_isRotating com.lqk.lib:isRotating}</code></td><td></td></tr>
+           <tr><td><code>{@link #Circle_rotateToCenter com.lqk.lib:rotateToCenter}</code></td><td></td></tr>
+           </table>
+           @see #Circle_circleBackground
+           @see #Circle_firstChildPosition
+           @see #Circle_isRotating
+           @see #Circle_rotateToCenter
+         */
+        public static final int[] Circle = {
+            0x7f010016, 0x7f010017, 0x7f010018, 0x7f010019
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.lqk.lib.R.attr#circleBackground}
+          attribute's value can be found in the {@link #Circle} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lqk.lib:circleBackground
+        */
+        public static final int Circle_circleBackground = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.lqk.lib.R.attr#firstChildPosition}
+          attribute's value can be found in the {@link #Circle} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>East</code></td><td>0</td><td></td></tr>
+<tr><td><code>South</code></td><td>90</td><td></td></tr>
+<tr><td><code>West</code></td><td>180</td><td></td></tr>
+<tr><td><code>North</code></td><td>270</td><td></td></tr>
+</table>
+          @attr name com.lqk.lib:firstChildPosition
+        */
+        public static final int Circle_firstChildPosition = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.lqk.lib.R.attr#isRotating}
+          attribute's value can be found in the {@link #Circle} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lqk.lib:isRotating
+        */
+        public static final int Circle_isRotating = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.lqk.lib.R.attr#rotateToCenter}
+          attribute's value can be found in the {@link #Circle} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lqk.lib:rotateToCenter
+        */
+        public static final int Circle_rotateToCenter = 2;
+        /** Attributes that can be used with a CircleImageView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CircleImageView_name com.lqk.lib:name}</code></td><td></td></tr>
+           </table>
+           @see #CircleImageView_name
+         */
+        public static final int[] CircleImageView = {
+            0x7f01001a
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.lqk.lib.R.attr#name}
+          attribute's value can be found in the {@link #CircleImageView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lqk.lib:name
+        */
+        public static final int CircleImageView_name = 0;
+        /**  Styleables used for styling the menu drawer. 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #MenuDrawer_mdActiveIndicator com.lqk.lib:mdActiveIndicator}</code></td><td> Drawable used as indicator for the active view.</td></tr>
+           <tr><td><code>{@link #MenuDrawer_mdAllowIndicatorAnimation com.lqk.lib:mdAllowIndicatorAnimation}</code></td><td> Whether the indicator should be animated between active views.</td></tr>
+           <tr><td><code>{@link #MenuDrawer_mdContentBackground com.lqk.lib:mdContentBackground}</code></td><td> Drawable to use for the background of the content.</td></tr>
+           <tr><td><code>{@link #MenuDrawer_mdDropShadow com.lqk.lib:mdDropShadow}</code></td><td> Drawable used for the drop shadow.</td></tr>
+           <tr><td><code>{@link #MenuDrawer_mdDropShadowColor com.lqk.lib:mdDropShadowColor}</code></td><td> The color of the drop shadow.</td></tr>
+           <tr><td><code>{@link #MenuDrawer_mdDropShadowEnabled com.lqk.lib:mdDropShadowEnabled}</code></td><td> Defines whether the content will have a dropshadow onto the menu.</td></tr>
+           <tr><td><code>{@link #MenuDrawer_mdDropShadowSize com.lqk.lib:mdDropShadowSize}</code></td><td> The size of the drop shadow.</td></tr>
+           <tr><td><code>{@link #MenuDrawer_mdMaxAnimationDuration com.lqk.lib:mdMaxAnimationDuration}</code></td><td> The maximum animation duration </td></tr>
+           <tr><td><code>{@link #MenuDrawer_mdMenuBackground com.lqk.lib:mdMenuBackground}</code></td><td> Drawable to use for the background of the menu.</td></tr>
+           <tr><td><code>{@link #MenuDrawer_mdMenuSize com.lqk.lib:mdMenuSize}</code></td><td> The size of the menu.</td></tr>
+           <tr><td><code>{@link #MenuDrawer_mdTouchBezelSize com.lqk.lib:mdTouchBezelSize}</code></td><td> The touch bezel size.</td></tr>
+           </table>
+           @see #MenuDrawer_mdActiveIndicator
+           @see #MenuDrawer_mdAllowIndicatorAnimation
+           @see #MenuDrawer_mdContentBackground
+           @see #MenuDrawer_mdDropShadow
+           @see #MenuDrawer_mdDropShadowColor
+           @see #MenuDrawer_mdDropShadowEnabled
+           @see #MenuDrawer_mdDropShadowSize
+           @see #MenuDrawer_mdMaxAnimationDuration
+           @see #MenuDrawer_mdMenuBackground
+           @see #MenuDrawer_mdMenuSize
+           @see #MenuDrawer_mdTouchBezelSize
+         */
+        public static final int[] MenuDrawer = {
+            0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b,
+            0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f,
+            0x7f010010, 0x7f010011, 0x7f010012
+        };
+        /**
+          <p>
+          @attr description
+           Drawable used as indicator for the active view. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.lqk.lib:mdActiveIndicator
+        */
+        public static final int MenuDrawer_mdActiveIndicator = 3;
+        /**
+          <p>
+          @attr description
+           Whether the indicator should be animated between active views. 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.lqk.lib:mdAllowIndicatorAnimation
+        */
+        public static final int MenuDrawer_mdAllowIndicatorAnimation = 9;
+        /**
+          <p>
+          @attr description
+           Drawable to use for the background of the content. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.lqk.lib:mdContentBackground
+        */
+        public static final int MenuDrawer_mdContentBackground = 0;
+        /**
+          <p>
+          @attr description
+           Drawable used for the drop shadow. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.lqk.lib:mdDropShadow
+        */
+        public static final int MenuDrawer_mdDropShadow = 7;
+        /**
+          <p>
+          @attr description
+           The color of the drop shadow. Default is #FF000000. 
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.lqk.lib:mdDropShadowColor
+        */
+        public static final int MenuDrawer_mdDropShadowColor = 6;
+        /**
+          <p>
+          @attr description
+           Defines whether the content will have a dropshadow onto the menu. Default is true. 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.lqk.lib:mdDropShadowEnabled
+        */
+        public static final int MenuDrawer_mdDropShadowEnabled = 4;
+        /**
+          <p>
+          @attr description
+           The size of the drop shadow. Default is 6dp 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.lqk.lib:mdDropShadowSize
+        */
+        public static final int MenuDrawer_mdDropShadowSize = 5;
+        /**
+          <p>
+          @attr description
+           The maximum animation duration 
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.lqk.lib:mdMaxAnimationDuration
+        */
+        public static final int MenuDrawer_mdMaxAnimationDuration = 10;
+        /**
+          <p>
+          @attr description
+           Drawable to use for the background of the menu. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.lqk.lib:mdMenuBackground
+        */
+        public static final int MenuDrawer_mdMenuBackground = 1;
+        /**
+          <p>
+          @attr description
+           The size of the menu. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.lqk.lib:mdMenuSize
+        */
+        public static final int MenuDrawer_mdMenuSize = 2;
+        /**
+          <p>
+          @attr description
+           The touch bezel size. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.lqk.lib:mdTouchBezelSize
+        */
+        public static final int MenuDrawer_mdTouchBezelSize = 8;
         /** Attributes that can be used with a PullToRefresh.
            <p>Includes the following attributes:</p>
            <table>
@@ -279,6 +854,65 @@ containing a value of this type.
           @attr name com.lqk.lib:mode
         */
         public static final int PullToRefresh_mode = 3;
+        /** Attributes that can be used with a UIButton.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #UIButton_image com.lqk.lib:image}</code></td><td></td></tr>
+           <tr><td><code>{@link #UIButton_subtitle com.lqk.lib:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #UIButton_title com.lqk.lib:title}</code></td><td></td></tr>
+           </table>
+           @see #UIButton_image
+           @see #UIButton_subtitle
+           @see #UIButton_title
+         */
+        public static final int[] UIButton = {
+            0x7f010013, 0x7f010014, 0x7f010015
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.lqk.lib.R.attr#image}
+          attribute's value can be found in the {@link #UIButton} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lqk.lib:image
+        */
+        public static final int UIButton_image = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.lqk.lib.R.attr#subtitle}
+          attribute's value can be found in the {@link #UIButton} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lqk.lib:subtitle
+        */
+        public static final int UIButton_subtitle = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.lqk.lib.R.attr#title}
+          attribute's value can be found in the {@link #UIButton} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lqk.lib:title
+        */
+        public static final int UIButton_title = 0;
         /** Attributes that can be used with a drop_down_list_attr.
            <p>Includes the following attributes:</p>
            <table>

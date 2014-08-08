@@ -13,6 +13,8 @@ import android.graphics.Bitmap;
  */
 
 public class TabConfig {
+/**意图标记Key*/
+public static final String TABSIGNKEY="tabSignKey";
 /**提示标记的资源*/	
 public int promptRes=-1;
 public Bitmap promptBitamp;
@@ -42,6 +44,9 @@ public Intent intent;
 /**类名唯一标示*/
 public Class className;
 
+/**意图标记对应顶部tab按钮*/
+public int tabSign;
+
 
 	/**
 	 * 创建一个新的实例 TabConfig.
@@ -62,19 +67,6 @@ public TabConfig(int textRes, int selectedRes, int normalRes, Intent intent,
 	this.intent = intent;
 	this.className = className;
 }
-
-
-	
-		/**
-		 * 创建一个新的实例 TabConfig.
-		 *
-		 * @param strText
-		 * @param selectedRes
-		 * @param normalRes
-		 * @param intent
-		 * @param className
-		 */
-		
 	public TabConfig(String strText, int selectedRes, int normalRes,
 			Intent intent, Class className) {
 		super();
@@ -85,6 +77,10 @@ public TabConfig(int textRes, int selectedRes, int normalRes, Intent intent,
 		this.className = className;
 	}
 
-
+	public TabConfig(int tabSign,String strText, int selectedRes, int normalRes,
+			Intent intent, Class className) {
+		this(strText, selectedRes, normalRes, intent, className);
+		this.tabSign=tabSign;
+	}
 	
 }

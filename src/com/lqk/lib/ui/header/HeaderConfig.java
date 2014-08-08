@@ -23,21 +23,26 @@ public class HeaderConfig {
   public int ib_top_leftbg=-1;
   public int ib_top_leftsrc=-1;
   public boolean isShowIbLeft=false;
+  public boolean isImpIbLeft=false;
   
   public int btn_top_leftbg=-1;
   public int btn_top_leftTextId=-1;
   public boolean isShowbtnLeft=false;
+  public boolean isImpbtnLeft=false;
   
   public int top_leftbg=-1;
+  public boolean isImpLeft=false;
   
   /**顶部右边资源*/
   public int ib_top_rightbg=-1;
   public int ib_top_rightsrc=-1;
   public boolean isShowIbRight=false;
+  public boolean isImpIbRight=false;
   
   public int btn_top_rightbg=-1;
   public int btn_top_rightTextId=-1;
   public boolean isShowbtnRight=false;
+  public boolean isImpbtnRight=false;
   
   public int top_bg=-1;
 }

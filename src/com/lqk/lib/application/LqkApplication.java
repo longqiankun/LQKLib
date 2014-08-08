@@ -30,7 +30,7 @@ private SqliteDBManager dbManager;
 		lauguage = Locale.getDefault().getLanguage();
 		new Thread() {
 			public void run() {
-				dbManager.open();
+//				dbManager.open();
 			}
 		}.start();
 	    super.onCreate();
